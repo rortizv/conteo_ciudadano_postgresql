@@ -56,20 +56,24 @@ if(isset($_REQUEST['action']))
                     aria-describedby=" " value="<?php echo $alm->__GET('id_censo_derecho'); ?>">
             </div>
 
-            <div class="form-group mb-2">
-                <label for="staticEmail2">Fecha registro: </label>
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <input name="fecha_registro" type="date" class="form-control" id="fecha_registro"
-                    aria-describedby=" " value="<?php echo $alm->__GET('fecha_registro'); ?>">
+            <div>
+                <div class="form-group mb-2">
+                    <label for="staticEmail2">Fecha registro: </label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input name="fecha_registro" type="date" class="form-control" id="fecha_registro"
+                        aria-describedby=" " value="<?php echo $alm->__GET('fecha_registro'); ?>">
+                </div>
             </div>
 
-            <div class="form-group mb-2">
-                <label for="staticEmail2">Direccion: </label>
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <input name="direccion" type="text" class="form-control" id="direccion"
-                    aria-describedby=" " value="<?php echo $alm->__GET('direccion'); ?>">
+            <div>
+                <div class="form-group mb-2">
+                    <label for="staticEmail2">Direccion: </label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input name="direccion" type="text" class="form-control" id="direccion" aria-describedby=" "
+                        value="<?php echo $alm->__GET('direccion'); ?>">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary mb-2" value="Reset">Guardar</button>

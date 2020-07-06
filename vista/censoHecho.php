@@ -51,30 +51,37 @@ if(isset($_REQUEST['action']))
     <div class="container  mb-2 col-6">
         <form id="formulario" class="form-inline"
             action="?action=<?php echo $alm->id_censo_hecho > 0 ? 'actualizar' : 'registrar'; ?>" method="post">
-            
-            <div class="form-group mb-2">
-                <label for="staticEmail2">Fecha inicio residencia: </label>
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <input name="fecha_inicio_residencia" type="date" class="form-control" id="fecha_inicio_residencia"
-                    aria-describedby=" " value="<?php echo $alm->__GET('fecha_inicio_residencia'); ?>">
+
+            <div>
+                <div class="form-group mb-2">
+                    <label for="staticEmail2">Fecha inicio residencia: </label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input name="fecha_inicio_residencia" type="date" class="form-control" id="fecha_inicio_residencia"
+                        aria-describedby=" " value="<?php echo $alm->__GET('fecha_inicio_residencia'); ?>">
+                </div>
             </div>
 
-            <div class="form-group mb-2">
-                <label for="staticEmail2">Direccion: </label>
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <input name="direccion" type="text" class="form-control" id="direccion"
-                    aria-describedby=" " value="<?php echo $alm->__GET('direccion'); ?>">
+
+            <div>
+                <div class="form-group mb-2">
+                    <label for="staticEmail2">Direccion: </label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input name="direccion" type="text" class="form-control" id="direccion" aria-describedby=" "
+                        value="<?php echo $alm->__GET('direccion'); ?>">
+                </div>
             </div>
 
-            <div class="form-group mb-2">
-                <label for="staticEmail2">Pais residencia: </label>
-            </div>
-       
-            <div class="form-group mx-sm-3 mb-2">
-                <input name="pais_residencia" type="text" class="form-control" id="pais_residencia"
-                    aria-describedby=" " value="<?php echo $alm->__GET('pais_residencia'); ?>">
+
+            <div>
+                <div class="form-group mb-2">
+                    <label for="staticEmail2">Pais residencia: </label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input name="pais_residencia" type="text" class="form-control" id="pais_residencia"
+                        aria-describedby=" " value="<?php echo $alm->__GET('pais_residencia'); ?>">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary mb-2" value="Reset">Guardar</button>
@@ -109,8 +116,8 @@ if(isset($_REQUEST['action']))
                 <a href="?action=editar&id_censo_hecho=<?php echo $r->id_censo_hecho; ?>"><button type="submit"
                         class="btn btn-warning">Editar</button></a>
 
-                <a href="?action=eliminar&id_censo_hecho=<?php echo $r->id_censo_hecho; ?>"><button disabled="" type="submit"
-                        class="btn btn-danger ">Eliminar</button></a>
+                <a href="?action=eliminar&id_censo_hecho=<?php echo $r->id_censo_hecho; ?>"><button disabled=""
+                        type="submit" class="btn btn-danger ">Eliminar</button></a>
             </td>
         </tr>
         <?php endforeach; ?>

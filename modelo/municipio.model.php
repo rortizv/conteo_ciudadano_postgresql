@@ -9,7 +9,7 @@ class MunicipioModel
 	{
 		try
 		{	
-			$this->pdo = new PDO('sqlsrv:Server=RAFAEL-PC;Database=conteo_ciudadano_bd');
+			$this->pdo = new PDO("pgsql:host=localhost;dbname=conteo_ciudadano_bd", "administrador", "Montero.84");
 			$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);        
 		}
 		catch(Exception $e)
