@@ -2,7 +2,7 @@
 # conteo_ciudadano_postgresql
 
 
-Conteo Ciudadano is an app developed in PHP that connects to a PostgreSQL database.  Both on localhost.
+Conteo Ciudadano is an app developed in PHP that connects to a PostgreSQL database.
 
 The app is the solution to an end-of-semester project proposed to in Data Bases II subject at Software Engineering program of the University of Cartagena.
 
